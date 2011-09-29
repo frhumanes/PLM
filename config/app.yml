@@ -1,0 +1,13 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  max_ofertas_on_homepage: 5
+  max_ofertas_on_estado: 20
+  max_proyectos_on_homepage: 20
+  max_facturas_on_homepage: 5
+  max_facturas_on_estado: 20
+  max_facturas_on_cliente: 20
+  max_facturas_on_mes: 20
+  wwwdomain: http://192.168.1.123

@@ -1,0 +1,69 @@
+# data/fixtures/tipos.yml
+
+TGasto:
+  personal:
+    name: Personal
+  equipamiento:
+    name: Equipamiento
+  seguro:
+    name: Seguro
+  desplazamiento:
+    name: Desplazamiento
+  dietas:
+    name: Dietas
+  subcontratacion:
+    name: Subcontratación
+    
+TEstado:
+  inacadabada:
+    name: En desarrollo
+  pendiente:
+    name: Pendiente Aprobación
+  validada:
+    name: Validada
+  presentada:
+    name: Presentada
+  adjudicada:
+    name: Adjudicada
+  rechazada:
+    name: No adjudicada
+  descartada:
+    name: Descartada
+    
+TRol:
+  director:
+    name: Director
+  firma1:
+    name: Validador Técnico
+  firma2:
+    name: Validador Económico
+  contable:
+    name: Contable
+    
+TOferta:
+  publica:
+    name: Pública
+  privada:
+    name: Privada
+  otros:
+    name: Otros
+    
+PRCategoria:
+  categoria1:
+    name: Categoria 1
+    coste_anual: '36000'
+  categoria2:
+    name: Categoria 2
+    coste_anual: '24000'
+  categoria3:
+    name: Categoria 3
+    coste_anual: '18000'
+
+TEstadoFactura:
+  entregada:
+    name: Entregada al cliente
+  anticipada:
+    name: Anticipada por el banco
+  liquidada:
+    name: Liquidada
+  

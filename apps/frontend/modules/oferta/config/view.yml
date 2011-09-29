@@ -1,0 +1,6 @@
+indexSuccess:
+  stylesheets: [ofertas.css]
+showSuccess:
+  stylesheets: [oferta.css, print.css: { media: print }]
+editSuccess:
+  stylesheets: [oferta.css]

@@ -1,0 +1,606 @@
+PRCategoria:
+  connection: doctrine
+  tableName: p_r_categoria
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    coste_anual:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+PRCliente:
+  connection: doctrine
+  tableName: p_r_cliente
+  actAs:
+    Sluggable:
+      fields: [name]
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    direccion:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PROferta:
+      local: id
+      foreign: cliente_id
+      type: many
+PRCoste:
+  connection: doctrine
+  tableName: p_r_coste
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    oferta_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo_gasto:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    concepto:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    dedicacion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      default: '100'
+      autoincrement: false
+    importe:
+      type: float(9,2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    coste_anual:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+  relations:
+    TGasto:
+      local: tipo_gasto
+      foreign: id
+      type: one
+    PROferta:
+      local: oferta_id
+      foreign: id
+      type: many
+PREmpleado:
+  connection: doctrine
+  tableName: p_r_empleado
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    user_id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    apellidos:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    email:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    perfil:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    TRol:
+      local: perfil
+      foreign: id
+      type: one
+    PROferta:
+      local: id
+      foreign: creador_id
+      type: many
+    sfGuardUser:
+      local: user_id
+      foreign: id
+      type: one
+PRHistorico:
+  connection: doctrine
+  tableName: p_r_historico
+  columns:
+    factura_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    estado:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: false
+    created_at:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    TEstadoFactura:
+      local: estado
+      foreign: id
+      type: one
+    PRFactura:
+      local: factura_id
+      foreign: id
+      type: one
+PROferta:
+  connection: doctrine
+  tableName: p_r_oferta
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    creador_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    cliente_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    titulo:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    expediente:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    descripcion_oferta:
+      type: string()
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    tipo_trabajo:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    tipo_oferta:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    base_licitacion:
+      type: float(9,2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    fianza_provisional:
+      type: float(9,2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: true
+      autoincrement: false
+    tipo_facturacion:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: 'Certificación mensual'
+      notnull: false
+      autoincrement: false
+    estructura:
+      type: float(4,2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '8'
+      notnull: true
+      autoincrement: false
+    financiacion:
+      type: float(4,2)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '6.5'
+      notnull: true
+      autoincrement: false
+    descuento:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '0'
+      notnull: false
+      autoincrement: false
+    estado:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      default: '1'
+      autoincrement: false
+    duracion:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_presentacion:
+      type: timestamp(25)
+      fixed: false
+      format:  'd-m-Y'
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_creacion:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    fecha_actualizacion:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    firma1:
+      type: boolean
+      notnull: true
+      default: '0'
+    firma2:
+      type: boolean
+      notnull: true
+      default: '0'
+    descripcion_pliego: {type: string(4000), notnull: true}
+    claridad: {type: boolean, notnull: true, default: '0'}
+    nuevo: {type: boolean, notnull: true, default: '0'}
+    experiencia: {type: boolean, notnull: true, default: '0'}
+    tiempo_elaboracion: {type: integer(2), notnull: true, default: '1'}
+    invitados: {type: boolean, notnull: true, default: '0'}
+    aportacion: {type: boolean, notnull: true, default: '0'}
+    condicionada: {type: boolean, notnull: true, default: '0'}
+    enchufe: {type: boolean, notnull: true, default: '0'}
+    contacto: {type: string(255), notnull: false}
+    previamente: {type: boolean, notnull: true, default: '0'}
+    imagen: {type: integer(2), notnull: true, default: '1'}
+    posicion_nuestra: {type: boolean, notnull: true, default: '0'}
+    porque_posicion: {type: string(255), notnull: false}
+    posicion_competencia: {type: boolean, notnull: true, default: '0'}
+    porque_competencia: {type: string(255), notnull: false}
+    competidor: {type: string(255), notnull: true, default: 'Emergya'}
+    ventaja: {type: integer(2), notnull: true, default: '1'}
+    exito: {type: boolean, notnull: true, default: '0'}
+    porque_exito: {type: string(255), notnull: false}
+  relations:
+    PRCliente:
+      local: cliente_id
+      foreign: id
+      type: one
+    PREmpleado:
+      local: creador_id
+      foreign: id
+      type: one
+    TEstado:
+      local: estado
+      foreign: id
+      type: one
+    TOferta:
+      local: tipo_oferta
+      foreign: id
+      type: one
+    PRLog:
+      local: id
+      foreign: oferta_id
+      type: many
+PRPersonal:
+  connection: doctrine
+  tableName: p_r_personal
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    tipo_gasto:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    categoria:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    coste_anual:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    TGasto:
+      local: tipo_gasto
+      foreign: id
+      type: one
+TEstado:
+  connection: doctrine
+  tableName: t_estado
+  actAs:
+    Sluggable:
+      fields: [name]
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PROferta:
+      local: id
+      foreign: estado
+      type: many
+TEstadoFactura:
+  connection: doctrine
+  tableName: t_estado_factura
+  actAs:
+    Sluggable:
+      fields: [name]
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PRHistorico:
+      local: id
+      foreign: estado
+      type: many
+    PRFactura:
+      local: id
+      foreign: estado
+      type: many
+TGasto:
+  connection: doctrine
+  tableName: t_gasto
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PRCoste:
+      local: id
+      foreign: tipo_gasto
+      type: many
+    PRPersonal:
+      local: id
+      foreign: tipo_gasto
+      type: many
+TOferta:
+  connection: doctrine
+  tableName: t_oferta
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PROferta:
+      local: id
+      foreign: tipo_oferta
+      type: many
+TRol:
+  connection: doctrine
+  tableName: t_rol
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    name:
+      type: string(255)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PREmpleado:
+      local: id
+      foreign: perfil
+      type: many
+PRProyecto:
+  actAs: { Timestampable: ~}
+  columns:
+    name: {type: string(255), notnull: true}
+    pedido: {type: string(255), notnull: true}
+    cliente_id: {type: integer, notnull: true}
+    importe_contratacion: 
+      type: float(9,2)
+      notnull: true
+    forma_pago: {type: string(255), notnull: true}
+    tipo_facturacion: {type: string(255), notnull: true}
+    duracion: {type: integer, notnull: true, default: 0}
+    oferta_id: {type: integer, notnull: false}
+    responsable_id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+  relations:
+    PROferta: {local: oferta_id, foreign: id, onDelete: NULL}
+    PREmpleado: {local: responsable_id, foreign: id, onDelete: NULL}
+    PRCliente: {local: cliente_id, foreign: id, onDelete: NULL}
+PRFactura:
+  actAs:
+    Timestampable: ~
+  columns:
+    name: {type: string(255), notnull: true}
+    estado: {type: integer, notnull: true}
+    proyecto_id: {type: integer, notnull: true}
+    importe: {type: integer, notnull: true}
+    codigo: {type: string(255), notnull: true}
+    fichero: {type: string(255)}
+  relations:
+    PRProyecto: {local: proyecto_id, foreign: id, onDelete: CASCADE}
+    PREstadoFactura: {local: estado, foreign: id, onDelete: CASCADE}
+PRHito:
+  columns:
+    porcentaje: {type: integer, notnull: true}
+    momento: {type: integer, notnull: true}
+    oferta_id: {type: integer, notnull: true}
+  relations:
+    PROferta: {onDelete: CASCADE, foreign: id, local: oferta_id}

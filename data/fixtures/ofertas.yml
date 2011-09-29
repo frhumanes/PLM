@@ -1,0 +1,33 @@
+# data/fixtures/ofertas.yml
+
+PROferta:
+  prueba1:
+    PREmpleado: alfonso
+    PRCliente: sadesi
+    titulo: Consultoría de migración al software libre
+    expediente: espediente 2009/12
+    descripcion_oferta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nibh quis mi vestibulum sagittis sagittis vitae est. Sed auctor fringilla porttitor. Sed libero arcu, consectetur et sollicitudin at, vehicula quis lectus. Maecenas tristique venenatis sapien, in molestie tortor fringilla nec. Mauris posuere diam eget quam lobortis suscipit. Donec eget nunc tellus, eget malesuada quam. Pellentesque lorem magna, pharetra eget vestibulum vel, vehicula vel lorem. Pellentesque eu velit vitae nulla faucibus rhoncus. Curabitur sit amet dolor leo. Suspendisse pretium dui vitae nulla gravida sit amet mollis dui tempus. Nunc faucibus pellentesque mi, quis viverra lectus mollis in. Sed pulvinar odio vitae erat varius vel sollicitudin mauris tincidunt. Quisque ac pretium enim. Nulla facilisi. Ut fermentum tincidunt feugiat. Nunc mattis justo non enim egestas ac tempus dui egestas. Nullam feugiat nibh nec lacus iaculis imperdiet scelerisque rhoncus tortor. Fusce ut ligula erat, quis mollis velit. Pellentesque leo nisl, congue vitae lobortis at, gravida eu felis. Fusce eu orci ut lorem porttitor ornare. 
+    tipo_trabajo: Consultoría
+    TOferta: publica
+    base_licitacion: '240000'
+    TEstado: pendiente
+    duracion: '365'
+    fecha_presentacion: '2010-12-12'
+    fecha_creacion: '2009-12-12'
+    fecha_actualizacion: '2009-12-12'
+    descripcion_pliego: 'Nada'
+  prueba2:
+    PREmpleado: javier
+    PRCliente: gmv
+    titulo: Revisión de procedimientos de seguridad
+    expediente: espediente 2009/10
+    descripcion_oferta: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nibh quis mi vestibulum sagittis sagittis vitae est. Sed auctor fringilla porttitor. Sed libero arcu, consectetur et sollicitudin at, vehicula quis lectus. Maecenas tristique venenatis sapien, in molestie tortor fringilla nec. Mauris posuere diam eget quam lobortis suscipit. Donec eget nunc tellus, eget malesuada quam. Pellentesque lorem magna, pharetra eget vestibulum vel, vehicula vel lorem. Pellentesque eu velit vitae nulla faucibus rhoncus. Curabitur sit amet dolor leo. Suspendisse pretium dui vitae nulla gravida sit amet mollis dui tempus. Nunc faucibus pellentesque mi, quis viverra lectus mollis in. Sed pulvinar odio vitae erat varius vel sollicitudin mauris tincidunt. Quisque ac pretium enim. Nulla facilisi. Ut fermentum tincidunt feugiat. Nunc mattis justo non enim egestas ac tempus dui egestas. Nullam feugiat nibh nec lacus iaculis imperdiet scelerisque rhoncus tortor. Fusce ut ligula erat, quis mollis velit. Pellentesque leo nisl, congue vitae lobortis at, gravida eu felis. Fusce eu orci ut lorem porttitor ornare. 
+    tipo_trabajo: Consultoría
+    TOferta: privada
+    base_licitacion: '780000'
+    TEstado: presentada
+    duracion: '45'
+    fecha_presentacion: '2010-11-11'
+    fecha_creacion: '2009-11-11'
+    fecha_actualizacion: '2009-11-11'
+    descripcion_pliego: 'Nada'

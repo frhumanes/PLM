@@ -1,0 +1,192 @@
+#oferta .description,
+#oferta p.how_to_apply
+{
+  font-size: 105%;
+  line-height: 1.4em;
+  margin: 0 10px;
+  color: #333;
+  text-align: justify;
+}
+
+#oferta .logo
+{
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  background: #fff;
+}
+
+#oferta_actions
+{
+  margin: 3px 0;
+  padding: 7px;
+  padding-left: 0;
+  background-color: #ffc;
+  list-style: none;
+}
+
+#oferta_actions ul
+{
+  display: inline;
+}
+
+#oferta_actions h3
+{
+  display: inline;
+  font-weight: bold;
+  margin-right: 15px;
+  padding: 7px;
+  background-color: #eee;
+}
+
+#oferta_actions li
+{
+  display: inline;
+  margin-right: 7px;
+}
+
+.expires_soon
+{
+  color: red;
+}
+
+
+
+.meta
+{
+  float: right;
+  color: #77766F;
+  margin-right: 10px;
+  font-size: 85%;
+}
+
+
+#oferta .costes, #oferta .balance
+{
+ width: 720px;
+ margin: 0 auto;
+}
+
+
+
+
+.costes td.titulo
+{
+  font-size: 0.8em;
+}
+
+.costes td.importe
+{
+  text-align: right;
+
+}
+
+
+.costes .concepto input
+{
+  color: #524F46;
+  font-style: italic;
+}
+
+.costes .importe input
+{
+  color: #d2813f;
+  width: 100px;
+  text-align: right;
+}
+
+.costes .num input, 
+.costes .dedicacion input
+{
+  color: #524F46;
+  width: 50px;
+  text-align: right;
+}
+
+.costes .tipo select
+{
+  padding: 0;
+  color: #524F46;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+
+.costes .total_gastos{
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.balance tr, .detalles tr, .facturacion tr, .encuesta tr
+{
+  border-bottom: 1px dotted #999;
+}
+
+.balance th, .balance td, .detalles td, .facturacion td, .detalles th, .facturacion th, .encuesta td, .encuesta th
+{
+  padding: 12px 15px;
+}
+
+.balance th, .detalles th, .facturacion th, .encuesta th
+{
+  width: 40%;
+   color: #524F46;
+  font-weight: bold;
+}
+
+.balance th
+{
+    width: 30%;
+}
+
+.encuesta th
+{
+    width: 60%;
+}
+.balance td, .detalles td, .facturacion td
+{
+  width: 60%;
+}
+
+.balance td
+{
+    width: 70%;
+}
+
+.encuesta td
+{
+    width: 40%;
+}
+.balance td input
+{
+  text-align: right;
+}
+
+
+#grafica
+{
+   margin: 20px auto;
+}
+
+.facturacion li
+{
+  padding: 5px
+}
+
+.facturacion input
+{
+   width: 50px;
+}
+
+.radio
+{
+  margin: auto 0px;
+}
+
+.radio_list, .radio_list li
+{
+  display: inline;
+  padding: 5px 0px;
+}
+

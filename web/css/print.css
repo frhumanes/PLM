@@ -1,0 +1,330 @@
+/*
+Reset CSS
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}del,ins{text-decoration:none;}
+
+/*
+Fonts CSS
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+body{font:14px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif;outline: none;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}
+
+a
+{
+  color: #524F46;
+  outline: none;
+}
+
+body
+{
+  font: 14px "Lucida Grande", Lucida, Verdana, sans-serif;
+  background-color: #828f95;
+}
+
+
+h2
+{
+  margin-top: -30px;
+  font-size: 125%;
+  font-style: italic;
+  padding: 5px 20px;
+  float: right;
+  color: #fff;
+}
+
+h3
+{
+  font-size: 150%;
+  margin: 15px 10px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+h3 small
+{
+  font-size: 70%;
+  color: #5d6162;
+}
+
+h4
+{
+  font-size: 110%;
+  margin: 20px 10px 7px;
+  font-weight: bold;
+  color: #176f94;
+}
+
+.post, #sub_header, #salir
+{
+   visibility: hidden;
+}
+
+#container
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header
+{
+}
+
+#header h1
+{
+  height: 110px;
+  width: 783px;
+  margin: 0 auto;
+}
+
+#header h1 a {
+  display: block;
+  width: 362px;
+  height: 115px;
+  background: url(../images/logo.png) no-repeat;
+}
+
+
+#header h1 img
+{
+  display: none;
+}
+
+
+#content .content {
+  width: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+#content h1
+{
+  margin-top: 10px;
+  margin-bottom: 1px;
+  padding: 0px 15px;
+  font-size: 200%;
+  text-transform: uppercase;
+  background: url(../images/bg-listheader.gif) no-repeat;
+  line-height: 32px;
+  color: #fff;
+}
+
+#content h1 a
+{
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 32px;
+}
+
+#footer, #toolbar
+{
+  visibility: hidden;
+}
+
+
+strong
+{
+  font-weight: bold;
+}
+
+em
+{
+  font-style: italic;
+}
+
+
+thead.encabezado
+{
+  background-color: #a3aaac;
+  text-transform: uppercase;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+thead.encabezado th, tfoot.pie th
+{
+  padding: 10px;
+}
+
+.pie .importe
+{
+  font-weight: bold;
+}
+
+tr.even
+{
+  background-color: #f3fafc;
+}
+
+tr.odd
+{
+  background-color: #DAE9CF;
+}
+
+.even td, .odd td
+{
+  padding: 12px 10px;
+  border-bottom: 1px dotted #999;
+}
+.meta
+{
+  float: right;
+  color: #77766F;
+  margin-right: 10px;
+  font-size: 85%;
+}
+.description{
+    text-align: justify;
+}
+
+.costes, .balance
+{
+ margin: 0 auto;
+}
+
+.costes .encabezado, .costes .pie
+{
+  background-color: #a3aaac;
+  text-transform: uppercase;
+}
+
+.costes .encabezado th
+{
+  padding: 10px;
+}
+
+.costes tr.even
+{
+  background-color: #f3fafc;
+}
+
+.costes tr.odd
+{
+  background-color: #DAE9CF;
+}
+
+.costes tr:hover
+{
+  background-color: #fff;
+}
+
+.costes td
+{
+  padding: 12px 15px;
+  border-bottom: 1px dotted #999;
+}
+
+.costes td.concepto
+{
+}
+
+.costes td.importe
+{
+  border-right: 1px dotted #999;
+  text-align: right;
+
+}
+
+
+.costes .concepto input
+{
+  color: #524F46;
+  font-style: italic;
+}
+
+.costes .importe input
+{
+  color: #d2813f;
+  width: 100px;
+  text-align: right;
+}
+
+.costes .num input, 
+.costes .dedicacion input
+{
+  color: #524F46;
+  width: 50px;
+  text-align: right;
+}
+
+.costes .tipo select
+{
+  padding: 0;
+  color: #524F46;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+
+.costes .total_gastos{
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.balance tr, .detalles tr, .facturacion tr, .encuesta tr
+{
+  border-bottom: 1px dotted #999;
+}
+
+.balance th, .balance td, .detalles td, .facturacion td, .detalles th, .facturacion th, .encuesta td, .encuesta th
+{
+  padding: 12px 15px;
+}
+
+.balance th, .detalles th, .facturacion th, .encuesta th
+{
+  width: 40%;
+   color: #524F46;
+  font-weight: bold;
+}
+
+.balance th
+{
+    width: 30%;
+}
+
+.encuesta th
+{
+    width: 60%;
+}
+.balance td, .detalles td, .facturacion td
+{
+  width: 60%;
+}
+
+.balance td
+{
+    width: 70%;
+}
+
+.encuesta td
+{
+    width: 40%;
+}
+
+
+
+#grafica
+{
+   margin: 20px auto;
+}
+
+.facturacion li
+{
+  padding: 5px
+}
+
+
+
+#tabs-bar, #tabs-acciones
+{
+    visibility: hidden;
+    height: 0px;
+}

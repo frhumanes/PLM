@@ -1,0 +1,9 @@
+# data/fixtures/clientes.yml
+
+PRCliente:
+  sadesi:
+    name: SADESI
+    direccion: Av. de la Arboleda s/n, Tomares, Sevilla
+  gmv:
+    name: GMV
+    direccion: Av. Americo Vespuccio, Isla de la Cartuja, Sevilla

@@ -1,0 +1,104 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+oferta:
+  class:   sfDoctrineRouteCollection
+  options: { model: PROferta }
+
+proyecto:
+  class:   sfDoctrineRouteCollection
+  options: { model: PRProyecto }
+  
+factura:
+  class:   sfDoctrineRouteCollection
+  options: { model: PRFactura }
+
+estado:
+  url:     /estado/:slug
+  class:   sfDoctrineRoute
+  param:   { module: estado, action: show }
+  options: { model: TEstado, type: object }
+
+facturas:
+  url:     /facturas/:slug
+  class:   sfDoctrineRoute
+  param:   { module: estado_factura, action: show }
+  options: { model: TEstadoFactura, type: object }
+  
+clientes:
+  url:     /facturas/cliente/:slug
+  class:   sfDoctrineRoute
+  param:   { module: cliente, action: showFacturas }
+  options: { model: PRCliente, type: object }
+
+meses:
+  url:     /facturas/fecha/:year/:month
+  class:   sfDoctrineRoute
+  param:   { module: historico, action: showFacturas }
+  options: { model: PRHistorico, type: object }
+
+nuevo_proyecto:
+  url:     /proyecto/new/:id
+  class:   sfDoctrineRoute
+  param:   { module: proyecto, action: new }
+  options: { model: PRProyecto, type: object }
+
+cambiar_estado:
+  url:     /oferta/:id/promo/:estado
+  class:   sfDoctrineRoute
+  param:   { module: oferta, action: changeEstado}
+  options: { model: PROferta, type: object }
+  
+nuevo_cliente:
+  url:     /oferta/add/:nombre/:direccion
+  class:   sfDoctrineRoute
+  param:   { module: oferta, action: newCliente}
+  options: { model: PROferta, type: object }
+  
+cambiar_estado_factura:
+  url:     /factura/:id/estado/:estado
+  class:   sfDoctrineRoute
+  param:   { module: factura, action: changeEstado}
+  options: { model: PRFactura, type: object }
+  
+guardar_costes:
+  url:     /oferta/addCostesForm
+  class:   sfDoctrineRoute
+  param:   { module: oferta, action: addCostesForm}
+  options: { model: PROferta, type: object }
+  
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+
+guardar_hitos:
+  url:     /oferta/addHitosForm
+  class:   sfDoctrineRoute
+  param:   { module: oferta, action: addHitosForm}
+  options: { model: PROferta, type: object }
+
+facturar_proyecto:
+  url:     /proyecto/:id/facturar
+  class:   sfDoctrineRoute
+  param:   { module: factura, action: new}
+  options: { model: PRFactura, type: object }
+
+buscar:
+  url:   /search
+  param: { module: empleado, action: search }
+
+
+homepage:
+  url:   /
+  param: { module: empleado, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+#default_index:
+#  url:   /:module
+#  param: { action: index }
+
+#default:
+#  url:   /:module/:action/*

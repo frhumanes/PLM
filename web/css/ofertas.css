@@ -1,0 +1,82 @@
+
+table.ofertas
+{
+ width: 720px;
+ margin: 0 auto;
+}
+
+table.ofertas .encabezado
+{
+  background-color: #a3aaac;
+  text-transform: uppercase;
+}
+
+
+table.ofertas tr.even
+{
+  background-color: #f3fafc;
+}
+
+table.ofertas tr.odd
+{
+  background-color: #DAE9CF;
+}
+
+table.ofertas tr:hover
+{
+  background-color: #fff;
+}
+
+table.ofertas td
+{
+  padding: 12px 15px;
+  border-bottom: 1px dotted #999;
+}
+
+table.ofertas td.position,
+table.ofertas td.location
+{
+  border-right: 1px dotted #999;
+}
+
+table.ofertas .titulo
+{
+  color: #524F46;
+  font-style: italic;
+  text-transform:uppercase;
+  width: 60%;
+}
+
+table.ofertas .responsable
+{
+  color: #d2813f;
+  width: 10%;
+}
+
+table.ofertas .estado, table.ofertas .fecha
+{
+  color: #524F46;
+  width: 10%;
+}
+
+table.ofertas .codigo
+{
+  padding: 0;
+  color: #524F46;
+  font-weight: bold;
+  width: 10%;
+}
+
+table.ofertas .codigo a
+{
+  padding: 12px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+table.ofertas .codigo a:hover
+{
+  text-decoration: underline;
+}
+
+

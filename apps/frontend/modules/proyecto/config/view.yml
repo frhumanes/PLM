@@ -1,0 +1,6 @@
+indexSuccess:
+  stylesheets: [proyectos.css]
+showSuccess:
+  stylesheets: [proyecto.css, facturas.css, print.css: { media: print }]
+editSuccess:
+  stylesheets: [proyecto.css]

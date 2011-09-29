@@ -1,0 +1,117 @@
+table.facturas
+{
+ width: 720px;
+ margin: 0 auto;
+ padding: 20px 0;
+}
+
+table.facturas .encabezado
+{
+  background-color: #a3aaac;
+  text-transform: uppercase;
+}
+
+table.facturas .encabezado th
+{
+  padding: 10px;
+}
+
+table.facturas tr.even
+{
+  background-color: #f3fafc;
+}
+
+table.facturas tr.odd
+{
+  background-color: #DAE9CF;
+}
+
+table.facturas tr:hover
+{
+  background-color: #fff;
+}
+
+table.facturas td
+{
+  padding: 12px 15px;
+  border-bottom: 1px dotted #999;
+}
+
+table.facturas td.position,
+table.facturas td.location
+{
+  border-right: 1px dotted #999;
+}
+
+table.facturas .titulo
+{
+  color: #524F46;
+  font-style: italic;
+  text-transform:uppercase;
+  width: 50%;
+}
+
+table.facturas .responsable
+{
+  color: #d2813f;
+  width: 10%;
+}
+
+table.facturas .estado, table.facturas .fecha
+{
+  color: #524F46;
+  width: 10%;
+}
+
+table.facturas .codigo
+{
+  padding: 0;
+  color: #524F46;
+  font-weight: bold;
+  width: 10%;
+}
+
+table.facturas .codigo a
+{
+  padding: 12px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+table.facturas .codigo a:hover
+{
+  text-decoration: underline;
+}
+
+
+
+.factura tr
+{
+  border-bottom: 1px dotted #999;
+}
+
+.factura th, .factura td
+{
+  padding: 12px 15px;
+}
+
+.factura th
+{
+  width: 40%;
+   color: #524F46;
+  font-weight: bold;
+}
+
+.factura td
+{
+  width: 60%;
+}
+
+.historico
+{
+ width: 720px;
+}
+.historico th, .historico td
+{
+ width: 50%;
+}

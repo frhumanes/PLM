@@ -1,0 +1,65 @@
+# data/fixtures/empleados.yml
+sfGuardUser:
+  adminUser:
+    username: admin
+    password: priceroch
+    is_super_admin: '1'
+    created_at: '1-1-2010'
+    updated_at: '1-1-2010'
+  juanmaUser:
+    username: juanmaria
+    password: priceroch
+    created_at: '1-1-2010'
+    updated_at: '1-1-2010'
+  alfonsoUser:
+    username: alfonso
+    password: priceroch
+    created_at: '1-1-2010'
+    updated_at: '1-1-2010'
+  jpUser:
+    username: jeanpaul
+    password: priceroch
+    created_at: '1-1-2010'
+    updated_at: '1-1-2010'
+  javierUser:
+    username: javier
+    password: priceroch
+    created_at: '1-1-2010'
+    updated_at: '1-1-2010'
+  elenaUser:
+    username: elena
+    password: priceroch
+    created_at: '1-1-2010'
+    updated_at: '1-1-2010'
+    
+PREmpleado:
+  juanma:
+    name: Juan María
+    apellidos: Moreno
+    email: juanmaria.moreno@price-roch.es
+    TRol: firma2
+    sfGuardUser: juanmaUser
+  javier:
+    name: Javier
+    apellidos: Pagés
+    email: javier.pages@price-roch.es
+    TRol: director
+    sfGuardUser: javierUser
+  alfonso:
+    name: Alfonso
+    apellidos: Arjona
+    email: alfonso.arjona@price-roch.es
+    TRol: firma1
+    sfGuardUser: alfonsoUser
+  jp:
+    name: Jean-Paul
+    apellidos: Beiten
+    email: jeanpaul.beiten@price-roch.es
+    TRol: director
+    sfGuardUser: jpUser
+  elena:
+    name: Elena
+    apellidos: Desconocido
+    email: elena@price-roch.es
+    TRol: contable
+    sfGuardUser: elenaUser

@@ -1,0 +1,240 @@
+#proyecto h1
+{
+}
+
+#proyecto h2
+{
+  margin-top: -30px;
+  font-size: 110%;
+  font-style: italic;
+  padding: 5px 20px;
+  float: right;
+  color: #fff;
+}
+
+#proyecto h3
+{
+  font-size: 150%;
+  margin: 15px 10px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+#proyecto h3 small
+{
+  font-size: 70%;
+  color: #5d6162;
+}
+
+#proyecto h4
+{
+  font-size: 110%;
+  margin: 20px 10px 7px;
+  font-weight: bold;
+  color: #176f94;
+}
+
+#proyecto .description,
+#proyecto p.how_to_apply
+{
+  font-size: 105%;
+  line-height: 1.4em;
+  margin: 0 10px;
+  color: #333;
+  text-align: justify;
+}
+
+#proyecto .logo
+{
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  background: #fff;
+}
+
+#proyecto_actions
+{
+  margin: 3px 0;
+  padding: 7px;
+  padding-left: 0;
+  background-color: #ffc;
+  list-style: none;
+}
+
+#proyecto_actions ul
+{
+  display: inline;
+}
+
+#proyecto_actions h3
+{
+  display: inline;
+  font-weight: bold;
+  margin-right: 15px;
+  padding: 7px;
+  background-color: #eee;
+}
+
+#proyecto_actions li
+{
+  display: inline;
+  margin-right: 7px;
+}
+
+.expires_soon
+{
+  color: red;
+}
+
+
+
+.meta
+{
+  float: right;
+  color: #77766F;
+  margin-right: 10px;
+  font-size: 85%;
+}
+
+
+.costes, .balance
+{
+ width: 720px;
+ margin: 0 auto;
+}
+
+.costes .encabezado, .costes .pie
+{
+  background-color: #a3aaac;
+  text-transform: uppercase;
+}
+
+.costes .encabezado th
+{
+  padding: 10px;
+}
+
+.costes tr.even
+{
+  background-color: #f3fafc;
+}
+
+.costes tr.odd
+{
+  background-color: #DAE9CF;
+}
+
+.costes tr:hover
+{
+  background-color: #fff;
+}
+
+.costes td
+{
+  padding: 12px 15px;
+  border-bottom: 1px dotted #999;
+}
+
+.costes td.concepto
+{
+}
+
+.costes td.importe
+{
+  border-right: 1px dotted #999;
+  text-align: right;
+
+}
+
+
+.costes .concepto input
+{
+  color: #524F46;
+  font-style: italic;
+}
+
+.costes .importe input
+{
+  color: #d2813f;
+  width: 100px;
+  text-align: right;
+}
+
+.costes .num input, 
+.costes .dedicacion input
+{
+  color: #524F46;
+  width: 50px;
+  text-align: right;
+}
+
+.costes .tipo select
+{
+  padding: 0;
+  color: #524F46;
+  font-weight: bold;
+  text-transform:uppercase;
+}
+
+.costes .total_gastos{
+    font-size: 1.5em;
+    text-align: right;
+}
+
+.balance tr, .detalles tr, .facturacion tr
+{
+  border-bottom: 1px dotted #999;
+}
+
+.balance th, .balance td, .detalles td, .facturacion td, .detalles th, .facturacion th
+{
+  padding: 12px 15px;
+}
+
+.balance th, .detalles th, .facturacion th
+{
+  width: 40%;
+   color: #524F46;
+  font-weight: bold;
+}
+
+.balance td, .detalles td, .facturacion td
+{
+  width: 60%;
+}
+
+.balance td input
+{
+  text-align: right;
+}
+
+
+#grafica
+{
+   margin: 20px auto;
+}
+
+.facturacion li
+{
+  padding: 5px
+}
+
+.facturacion input
+{
+   width: 50px;
+}
+
+.radio
+{
+  margin: auto 0px;
+}
+
+.radio_list, .radio_list li
+{
+  display: inline;
+  padding: 0px;
+}
+ 
+
